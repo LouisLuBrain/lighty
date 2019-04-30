@@ -1,6 +1,6 @@
 /*切换开关*/
 /*开关的大小*/
-.switch-container{
+.switch_container{
     height: 24px;
     width: 42px;
 }
@@ -95,4 +95,50 @@ input.suspend:hover{
 	border-top: 8px solid transparent;
     border-right: 12px solid #58B2DC;
     border-bottom: 8px solid transparent;
+}
+/*下拉列表*/
+.dropdown_container{
+	width: 300px;
+	height: auto;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	display: flex;
+	font-size: 16px;
+	flex-direction: column;
+}
+span.dropdown_title{
+	cursor: pointer;
+	height: auto;
+	padding: 5px 10px 5px 20px;
+	border-bottom: 1px solid #ccc;
+	background-color: #aaa;
+	color: #fff;
+	position: relative;
+}
+span.dropdown_title:before{
+	position: absolute;
+	margin: 5px 0px;
+	content: "";
+	width: 0px;
+	height: 0px;
+	left: 5px;
+	border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid #fff;
+}
+span.dropdown_title:hover .dropdown{
+	height: auto;
+}
+.dropdown_ul{
+	height: auto;
+	max-height: 0px;
+	margin: 0px;
+	overflow: hidden;
+	transition:max-height 0.5s cubic-bezier(.44,.22,.51,1);
+}
+.dropdown_item{
+	padding: 5px 10px;
+	list-style: none;
 }
