@@ -10,25 +10,14 @@ export default new Router({
       main: () => import('@/components/RouterView')
     },
     children: [{
-        path: 'toggle',
-        name: 'toggle',
+        path: 'Buttons',
+        name: 'Buttons',
         meta: {
           title: '',
           auth: false // 开发时用false
         },
         components: {
-          submain: () => import('@/components/lightyUI/Toggle')
-        }
-      },
-      {
-        path: 'bubble',
-        name: 'bubble',
-        meta: {
-          title: '',
-          auth: false // 开发时用false
-        },
-        components: {
-          submain: () => import('@/components/lightyUI/Bubble')
+          submain: () => import('@/components/lightyUI/Buttons/ButtonView')
         }
       }]
   }]

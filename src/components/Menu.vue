@@ -2,11 +2,7 @@
 <!-- 菜单组件：结构部分 -->
 <template>
   <nav class="left nav">
-    <MenuItem path="/toggle" tag="切换开关"></MenuItem>
-    <MenuItem path="/bubble" tag="波纹按钮"></MenuItem>
-    <MenuItem path="/b" tag="文本气泡框"></MenuItem>
-    <MenuItem path="/c" tag="下拉列表"></MenuItem>
-    <MenuItem path="/d" tag="加载条"></MenuItem>
+    <MenuItem path="/Buttons" tag="按钮"></MenuItem>
   </nav>
 </template>
 
@@ -40,11 +36,13 @@ export default {
 
 <style scoped>
 .nav {
-  height: 100%;
+  margin-top: 20px;
+  height: auto;
+  min-height: 600px;
   width: 120px;
   display: flex;
-  border-right: 2px solid #dddddd;
+  border-radius: 0px 5px 5px 0px;
   flex-direction: column;
-  /* box-shadow: 1px 0px 2px 0px rgba(30,144,255,0.5); */
+  box-shadow: 2px 2px 5px 1px rgba(43, 71, 99, 0.3);
 }
 </style>
