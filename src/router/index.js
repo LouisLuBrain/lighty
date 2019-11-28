@@ -7,7 +7,7 @@ export default new Router({
     path: '/',
     name: 'Home',
     components:{
-      main: () => import('@/components/RouterView')
+      main: () => import('@/views/RouterView')
     },
     children: [{
         path: 'Buttons',
@@ -17,7 +17,18 @@ export default new Router({
           auth: false // 开发时用false
         },
         components: {
-          submain: () => import('@/components/lightyUI/Buttons/ButtonView')
+          submain: () => import('@/views/ButtonView')
+        }
+      },
+      {
+        path: 'Inputs',
+        name: 'Inputs',
+        meta: {
+          title: '',
+          auth: false // 开发时用false
+        },
+        components: {
+          submain: () => import('@/views/InputView')
         }
       }]
   }]

@@ -3,6 +3,7 @@
 <template>
   <nav class="left nav">
     <MenuItem path="/Buttons" tag="按钮"></MenuItem>
+    <MenuItem path="/Inputs" tag="输入框"></MenuItem>
   </nav>
 </template>
 
@@ -16,7 +17,7 @@ export default {
       MenuItem:MenuItem
   },
   data() {
-    return {};
+    return {}
   },
   // 运算
   computed: {},
