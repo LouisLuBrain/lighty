@@ -3,10 +3,7 @@
 <template>
   <div class="l-bg">
     <div class="view-container">
-      <Toggle></Toggle>
-    </div>
-    <div class="view-container">
-      <Bubble></Bubble>
+      <SearchBar></SearchBar>
     </div>
   </div>
 </template>
@@ -14,12 +11,10 @@
 <!-- 逻辑部分 -->
 
 <script>
-import Bubble from "../components/lightyUI/Buttons/Bubble"
-import Toggle from "../components/lightyUI/Buttons/Toggle"
+import SearchBar from "../components/lightyUI/Inputs/SearchBar"
 export default {
   components: {
-    Bubble: Bubble,
-    Toggle: Toggle
+    SearchBar: SearchBar
   },
   data() {
     return {}

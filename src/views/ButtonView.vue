@@ -8,18 +8,26 @@
     <div class="view-container">
       <Bubble></Bubble>
     </div>
+    <div class="view-container">
+      <Round></Round>
+      <Round size="large"></Round>
+      <Round size="small"></Round>
+    </div>
   </div>
 </template>
 
 <!-- 逻辑部分 -->
 
 <script>
-import Bubble from "../components/lightyUI/Buttons/Bubble"
+import Bubble from "../components/lightyUI/Buttons/BubbleButton"
 import Toggle from "../components/lightyUI/Buttons/Toggle"
+import Round from "../components/lightyUI/Buttons/RoundButton.vue"
+
 export default {
   components: {
     Bubble: Bubble,
-    Toggle: Toggle
+    Toggle: Toggle,
+    Round: Round
   },
   data() {
     return {}

@@ -78,7 +78,7 @@ export default {
   border: 1px solid #ddd;
   box-shadow: 1px 1px 3px 0px rgba(100,100,100,0.3)
 }
-/* color */
+/* type */
 .primary {
   background-color: #1e90ff;
   color: #fff;

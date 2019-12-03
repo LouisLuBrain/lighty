@@ -2,8 +2,8 @@
 <!-- 菜单组件：结构部分 -->
 <template>
   <nav class="left nav">
-    <MenuItem path="/Buttons" tag="按钮"></MenuItem>
-    <MenuItem path="/Inputs" tag="输入框"></MenuItem>
+    <MenuItem path="/Buttons" tag="Button"></MenuItem>
+    <MenuItem path="/Inputs" tag="Input"></MenuItem>
   </nav>
 </template>
 
@@ -37,13 +37,17 @@ export default {
 
 <style scoped>
 .nav {
-  margin-top: 20px;
+  margin: 10px 0px;
   height: auto;
-  min-height: 600px;
+  max-height: calc(100% - 30px);
   width: 120px;
   display: flex;
   border-radius: 0px 5px 5px 0px;
   flex-direction: column;
+  overflow-y: scroll;
   box-shadow: 2px 2px 5px 1px rgba(43, 71, 99, 0.3);
+}
+.nav::-webkit-scrollbar{
+  display: none;
 }
 </style>
